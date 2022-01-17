@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CFD8DC"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/creneautag"
+        android:layout_width="107dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/typetag"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="29dp"
+        android:fontFamily="casual"
+        android:text="Creneau :"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/salletag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bloctag"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="29dp"
+        android:fontFamily="casual"
+        android:text="Nom Salle :"
+        android:textColor="#070707"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/bloc"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scanner_view"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="83dp"
+        android:layout_toEndOf="@+id/bloctag" />
+
+    <com.budiyev.android.codescanner.CodeScannerView
+        android:id="@+id/scanner_view"
+        android:layout_width="match_parent"
+        android:layout_height="317dp"
+        app:autoFocusButtonColor="@android:color/white"
+        app:autoFocusButtonVisible="true"
+        app:flashButtonColor="@android:color/white"
+        app:flashButtonVisible="true"
+        app:frameAspectRatioHeight="1"
+        app:frameAspectRatioWidth="1"
+        app:frameColor="@android:color/white"
+        app:frameCornersRadius="0dp"
+        app:frameCornersSize="50dp"
+        app:frameSize="0.75"
+        app:frameThickness="2dp"
+        app:maskColor="#77000000" />
+
+    <TextView
+        android:id="@+id/bloctag"
+        android:layout_width="98dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scanner_view"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="casual"
+        android:text="Nom du bloc :"
+        android:textColor="#0B0B0B"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/salle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bloc"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="80dp"
+        android:layout_toEndOf="@+id/salletag" />
+
+    <TextView
+        android:id="@+id/typetag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/salletag"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="casual"
+        android:text="Type Salle :"
+        android:textColor="#090909"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="121dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/salle"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="83dp"
+        android:layout_toEndOf="@+id/typetag" />
+
+    <TextView
+        android:id="@+id/creneau"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/type"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="78dp"
+        android:layout_toEndOf="@+id/creneautag" />
+
+    <Button
+        android:id="@+id/confirmer"
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:layout_below="@+id/creneautag"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="62dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Confirmer l'occupation" />
+
+</RelativeLayout>
